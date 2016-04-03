@@ -1,0 +1,6 @@
+{{define "inner"}}
+array(
+  'ID' => idForHubspotId({{.Id}}, $hlsm_uploaded_posts, 'postscontent'),
+  'post_content'   => '{{.Post_body | escapeApos | replaceBlogLinks | replaceImageLinks | replaceSpecialChars | replaceCTAs | cleanHtml}}', // The full text of the post.
+),
+{{end}}

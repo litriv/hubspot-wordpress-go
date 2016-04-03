@@ -1,0 +1,17 @@
+{{define "inner"}}
+{{.Id}} => array(
+'user_login'    =>  '{{userLogin .Full_name}}',
+'user_url'  => '{{.Website}}',
+'user_pass' => '{{print "changeme"}}',
+'user_email' => '{{.Email}}',
+'display_name' => '{{.Full_name}}',
+'first_name' => '{{firstName .Full_name}}',
+'last_name' => '{{lastName .Full_name}}',
+'description' => '{{.Bio}}',
+'role' => 'contributor',
+'googleplus' => '{{.Google_plus}}',
+'linkedin' => '{{.Linkedin}}',
+'facebook' => '{{.Facebook}}',
+'twitter' => '{{.Twitter}}'
+),
+{{end}}

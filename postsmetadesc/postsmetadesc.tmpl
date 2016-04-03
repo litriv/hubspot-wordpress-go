@@ -1,0 +1,6 @@
+{{define "inner"}}
+array(
+  'ID' => idForHubspotId({{.Id}}, $hlsm_uploaded_posts, 'postsmetadesc'),
+  'desc'   => '{{escapeApos .Meta_description}}', 
+),
+{{end}}

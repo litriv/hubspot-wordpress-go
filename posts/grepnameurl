@@ -1,0 +1,1 @@
+python -mjson.tool posts.json | grep -Eo '("name":.*?$|"url":.*$)' |less

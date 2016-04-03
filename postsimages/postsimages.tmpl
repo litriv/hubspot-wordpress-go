@@ -1,0 +1,3 @@
+{{define "inner"}}
+idForHubspotId({{.Id}}, $hlsm_uploaded_posts, 'postsimages') => array({{range .Images}}'{{.HubspotUrl}}' => '{{.Location}}', {{end}}),
+{{end}}

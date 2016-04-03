@@ -1,0 +1,1 @@
+curl https://api.hubapi.com/content/api/v2/blog-authors\?hapikey\=${1}\&portalId\=${2}\&limit\=1000 > authors.json
